@@ -1,0 +1,36 @@
+# Before running this script please ensure the below variables are correct
+
+Step :1 
+create_new_user.sql
+=======================
+niceuser 
+Nicepw@1
+nicedb1
+
+Step :2
+login_new_user.sql
+=======================
+nicedb1
+source <absolute path of create_all.sql>
+
+Step :3
+mysql_new_schema.sh
+=======================
+
+mysql -uroot -pmanager1! < create_new_user.sql
+          <existing root userid passwd>
+
+for created user login:
+mysql -uniceuser1 -pNicepw@1
+
+Step :4
+create_all.sql
+=======================
+For all source command(s) need to give absolute path 
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Manager@1!';
+CREATE USER 'niceuser'@'54.89.154.136' IDENTIFIED BY 'Manager@1!';
+GRANT ALL PRIVILEGES ON nice.* TO 'niceuser'@'54.89.154.136' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+\q
+
